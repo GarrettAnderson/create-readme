@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GarrettAnderson/create-readme/issues"
   },
-  "homepage": "https://github.com/GarrettAnderson/create-readme#readme"
+  "homepage": "https://github.com/GarrettAnderson/create-readme#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
 }
