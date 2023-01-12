@@ -1,0 +1,19 @@
+{
+  "name": "create-readme",
+  "version": "1.0.0",
+  "description": "generate a readme file with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarrettAnderson/create-readme.git"
+  },
+  "author": "garrett anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarrettAnderson/create-readme/issues"
+  },
+  "homepage": "https://github.com/GarrettAnderson/create-readme#readme"
+}
