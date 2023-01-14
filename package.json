@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/GarrettAnderson/create-readme#readme",
   "dependencies": {
-    "inquirer": "^9.1.4"
+    "inquirer": "^8.2.4"
   }
 }
