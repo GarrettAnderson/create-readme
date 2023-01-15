@@ -19,6 +19,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'What are the instructions for usage?',
+        name: 'Usage Instructions'
+    },
+    {
+        type: 'input',
         message: 'What are the contribution guidelines?',
         name: 'Contribution Guidelines'
     },
@@ -45,3 +50,66 @@ const questions = [
     }
 ]
 
+// the markdown for the readme file
+
+const createReadme = (answers) => 
+`
+# ${answers['Project Name']}
+    
+## Table of Contents
+
+- [Description](#ProjectDescription)
+- [Installation](#InstallationInstructions)
+- [Usage](#UsageInstructions)
+- [Contribution](#ContributionGuidelines)
+- [Test Instruction](#TestInstructions)
+- [License](#License)
+- [Github Username](#GithubUsername)
+- [Email Address](#EmailAddress)
+
+
+## Project Description
+${answers['Project Description']}
+
+## Installation Instructions
+${answers['Installation Instructions']}
+
+## Usage Instructions
+${answers['Usage Instructions']}
+
+## Contribution Guidelines
+${answers['Contribution Guidelines']}
+
+## Test Instructions
+${answers['Test Instructions']}
+
+## License
+${answers.License}
+
+## Github Username
+${answers['Github Username']}
+
+## Email Address
+${answers['Email Address']}
+
+`
+
+
+function promptQuestions() {
+    inquirer.prompt(questions)
+    .then((data) => {
+        console.log(data)
+        fs.writeFile('README.md', createReadme(data), () => {
+            console.log('success')
+        })
+    })
+    .catch((error) => {
+        if(error.isTtyError) {
+            console.log(error)
+        } else {
+            console.log(error)
+        }
+    })
+}
+
+promptQuestions()
