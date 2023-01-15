@@ -1,5 +1,5 @@
 
-# Create Readme
+# 
     
 ## Table of Contents
 
@@ -12,15 +12,16 @@
 - [Github Username](#GithubUsername)
 - [Email Address](#EmailAddress)
 
-
+<div id='ProjectDescription'/>
 ## Project Description
-Create a readme with node
 
+
+<div id='InstallationInstructions'/>
 ## Installation Instructions
-if there isn't a node modules folder, run npm init in project directory. run npm install to install the dependent packages like inquirer.
+
 
 ## Usage Instructions
-Right click on index.js file and choose open in integrated terminal. run node index and follow the prompts in the terminal.
+
 
 ## Contribution Guidelines
 
@@ -29,11 +30,11 @@ Right click on index.js file and choose open in integrated terminal. run node in
 
 
 ## License
-MIT License
+None
 
 ## Github Username
-garrett anderson
+
 
 ## Email Address
-glga@protonmail.com
+
 

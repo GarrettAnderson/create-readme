@@ -67,28 +67,35 @@ const createReadme = (answers) =>
 - [Github Username](#GithubUsername)
 - [Email Address](#EmailAddress)
 
-
+<div id='ProjectDescription'/>
 ## Project Description
 ${answers['Project Description']}
 
+<div id='InstallationInstructions'/>
 ## Installation Instructions
 ${answers['Installation Instructions']}
 
+<div id='UsageInstructions'/>
 ## Usage Instructions
 ${answers['Usage Instructions']}
 
+<div id='ContributionGuidelines'/>
 ## Contribution Guidelines
 ${answers['Contribution Guidelines']}
 
+<div id='TestInstructions'/>
 ## Test Instructions
 ${answers['Test Instructions']}
 
+<div id='License'/>
 ## License
 ${answers.License}
 
+<div id='GithubUsername'/>
 ## Github Username
 ${answers['Github Username']}
 
+<div id='EmailAddress'/>
 ## Email Address
 ${answers['Email Address']}
 
