@@ -64,8 +64,7 @@ const createReadme = (answers) =>
 - [Contribution](#ContributionGuidelines)
 - [Test Instruction](#TestInstructions)
 - [License](#License)
-- [Github Username](#GithubUsername)
-- [Email Address](#EmailAddress)
+- [Questions](#Questions)
 
 <div id='ProjectDescription'/>
 ## Project Description
@@ -91,13 +90,13 @@ ${answers['Test Instructions']}
 ## License
 ${answers.License}
 
-<div id='GithubUsername'/>
-## Github Username
-${answers['Github Username']}
+<div id='Questions'/>
+## Questions
 
-<div id='EmailAddress'/>
-## Email Address
-${answers['Email Address']}
+For questions you can find me on Github or via my email:
+
+My Github profile is https://github.com/${answers['Github Username']}
+My email address is: ${answers['Email Address']}
 
 `
 
