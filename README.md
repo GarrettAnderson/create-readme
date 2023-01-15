@@ -11,31 +11,31 @@
 - [License](#License)
 - [Questions](#Questions)
 
-<div id='ProjectDescription'/>
+<div id='ProjectDescription'></div>
 ## Project Description
 Create a readme with node via command line.
 
-<div id='InstallationInstructions'/>
+<div id='InstallationInstructions'></div>
 ## Installation Instructions
 If there isn't a node modules folder, run npm init in project directory. run npm install to install the dependent packages like inquirer.
 
-<div id='UsageInstructions'/>
+<div id='UsageInstructions'></div>
 ## Usage Instructions
 Right click on index.js file and choose open in integrated terminal. run node index and follow the prompts in the terminal.
 
-<div id='ContributionGuidelines'/>
+<div id='ContributionGuidelines'></div>
 ## Contribution Guidelines
 
 
-<div id='TestInstructions'/>
+<div id='TestInstructions'></div>
 ## Test Instructions
 
 
-<div id='License'/>
+<div id='License'></div>
 ## License
 MIT License
 
-<div id='Questions'/>
+<div id='Questions'></div>
 ## Questions
 
 For questions you can find me on Github or via my email:

@@ -66,31 +66,31 @@ const createReadme = (answers) =>
 - [License](#License)
 - [Questions](#Questions)
 
-<div id='ProjectDescription'/>
+<div id='ProjectDescription'></div>
 ## Project Description
 ${answers['Project Description']}
 
-<div id='InstallationInstructions'/>
+<div id='InstallationInstructions'></div>
 ## Installation Instructions
 ${answers['Installation Instructions']}
 
-<div id='UsageInstructions'/>
+<div id='UsageInstructions'></div>
 ## Usage Instructions
 ${answers['Usage Instructions']}
 
-<div id='ContributionGuidelines'/>
+<div id='ContributionGuidelines'></div>
 ## Contribution Guidelines
 ${answers['Contribution Guidelines']}
 
-<div id='TestInstructions'/>
+<div id='TestInstructions'></div>
 ## Test Instructions
 ${answers['Test Instructions']}
 
-<div id='License'/>
+<div id='License'></div>
 ## License
 ${answers.License}
 
-<div id='Questions'/>
+<div id='Questions'></div>
 ## Questions
 
 For questions you can find me on Github or via my email:
