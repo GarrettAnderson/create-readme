@@ -1,6 +1,11 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 
+
+let licenseType = ""
+let licenseBadge = ""
+
+
 const questions = [
     {
         type: 'input',
@@ -68,7 +73,7 @@ const createReadme = (answers) =>
 
 
 ## <div id='ProjectDescription'></div> Project Description
-${answers['Project Description']}
+${answers['Project Description']} ${licenseBadge}
 
 
 ## <div id='InstallationInstructions'></div> Installation Instructions
@@ -110,6 +115,10 @@ function promptQuestions() {
         console.log(data)
         fs.writeFile('README.md', createReadme(data), () => {
             console.log('success')
+
+            iterateLicenseData(data)
+
+
         })
     })
     .catch((error) => {
@@ -122,3 +131,23 @@ function promptQuestions() {
 }
 
 promptQuestions()
+iterateLicenseData = (data) => {
+    licenseType = data.License
+    // console.log(licenseType)
+
+    
+    if (licenseType === "None") {
+        licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+        console.log(licenseBadge)
+    }
+    // [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+    // [![License: Mozilla Public License 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
+    // [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+        
+
+
+}
+
+

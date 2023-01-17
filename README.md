@@ -3,25 +3,25 @@
     
 ## Table of Contents
 
-* [Description](#ProjectDescription)
-* [Installation](#InstallationInstructions)
-* [Usage](#UsageInstructions)
-* [Contribution](#ContributionGuidelines)
-* [Test Instruction](#TestInstructions)
-* [License](#License)
-* [Questions](#Questions)
+- [Description](#ProjectDescription)
+- [Installation](#InstallationInstructions)
+- [Usage](#UsageInstructions)
+- [Contribution](#ContributionGuidelines)
+- [Test Instruction](#TestInstructions)
+- [License](#License)
+- [Questions](#Questions)
 
 
 ## <div id='ProjectDescription'></div> Project Description
-Create a readme with node via command line.
+ 
 
 
 ## <div id='InstallationInstructions'></div> Installation Instructions
-If there isn't a node modules folder, run npm init in project directory. run npm install to install the dependent packages like inquirer.
 
 
-## <div id='UsageInstructions'></div>Usage Instructions
-Right click on index.js file and choose open in integrated terminal. run node index and follow the prompts in the terminal.
+
+## <div id='UsageInstructions'></div> Usage Instructions
+
 
 
 ## <div id='ContributionGuidelines'></div> Contribution Guidelines
@@ -31,14 +31,15 @@ Right click on index.js file and choose open in integrated terminal. run node in
 ## <div id='TestInstructions'></div> Test Instructions
 
 
+
 ## <div id='License'></div> License
-MIT License
+None
 
 
 ## <div id='Questions'></div> Questions
 
 For questions you can find me on Github or via my email:
 
-My Github profile is https://github.com/garrettanderson
-My email address is: glga@protonmail.com
+My Github profile is https://github.com/
+My email address is: 
 
