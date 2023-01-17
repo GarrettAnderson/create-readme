@@ -101,6 +101,9 @@ My email address is: ${answers['Email Address']}
 `
 
 
+// depending on type of license chosen by user, that license badge image will render next to the project title
+
+
 function promptQuestions() {
     inquirer.prompt(questions)
     .then((data) => {
