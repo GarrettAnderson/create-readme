@@ -1,47 +1,47 @@
 
-# Create README
+# Create README 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
     
 ## Table of Contents
 
-- [Description](#ProjectDescription)
-- [Installation](#InstallationInstructions)
-- [Usage](#UsageInstructions)
-- [Contribution](#ContributionGuidelines)
-- [Test Instruction](#TestInstructions)
-- [License](#License)
-- [Questions](#Questions)
+* [Description](#ProjectDescription)
+* [Installation](#InstallationInstructions)
+* [Usage](#UsageInstructions)
+* [Contribution](#ContributionGuidelines)
+* [Test Instruction](#TestInstructions)
+* [License](#License)
+* [Questions](#Questions)
 
 
 ## <div id='ProjectDescription'></div> Project Description
-
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-undefined
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Create a readme with node via command line.
 
 ## <div id='InstallationInstructions'></div> Installation Instructions
-
+If there isn't a node modules folder, run npm init in project directory. run npm install to install the dependent packages like inquirer.
 
 
 ## <div id='UsageInstructions'></div> Usage Instructions
-
+Right click on index.js file and choose open in integrated terminal. run node index and follow the prompts in the terminal.
 
 
 ## <div id='ContributionGuidelines'></div> Contribution Guidelines
-
+Clone repo and send a push request with updates/changes
 
 
 ## <div id='TestInstructions'></div> Test Instructions
-
+There are no test cases to run.
 
 
 ## <div id='License'></div> License
-None
+MIT License
+
 
 
 ## <div id='Questions'></div> Questions
 
 For questions you can find me on Github or via my email:
 
-My Github profile is https://github.com/
-My email address is: 
+My Github profile is https://github.com/GarrettAnderson
+My email address is: glga@protonmail.com
 

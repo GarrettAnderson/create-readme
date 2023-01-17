@@ -4,7 +4,7 @@ const fs = require('fs')
 
 let licenseType = ""
 let licenseBadge = ""
-
+let licenseExplained = ""
 
 const questions = [
     {
@@ -59,18 +59,19 @@ const questions = [
 
 const createReadme = (answers) => 
 `
-# ${answers['Project Name']} ${renderLicenseBadge(answers.License)}
+# ${answers['Project Name']} 
+${renderLicenseBadge(answers.License)}
 
     
 ## Table of Contents
 
-- [Description](#ProjectDescription)
-- [Installation](#InstallationInstructions)
-- [Usage](#UsageInstructions)
-- [Contribution](#ContributionGuidelines)
-- [Test Instruction](#TestInstructions)
-- [License](#License)
-- [Questions](#Questions)
+* [Description](#ProjectDescription)
+* [Installation](#InstallationInstructions)
+* [Usage](#UsageInstructions)
+* [Contribution](#ContributionGuidelines)
+* [Test Instruction](#TestInstructions)
+* [License](#License)
+* [Questions](#Questions)
 
 
 ## <div id='ProjectDescription'></div> Project Description
@@ -94,6 +95,7 @@ ${answers['Test Instructions']}
 
 ## <div id='License'></div> License
 ${answers.License}
+${licenseExplained}
 
 
 ## <div id='Questions'></div> Questions
@@ -137,18 +139,19 @@ renderLicenseBadge = (data) => {
 
     
     if (licenseType === 'Mozilla Public License 2.0') {
-        licenseBadge = `![License: Mozilla Public License 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]`
+        licenseBadge = `![License: Mozilla Public License 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`
         // console.log(licenseBadge)
         return licenseBadge
     } else if (licenseType === 'MIT License') {
-        licenseBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+        licenseBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
         // console.log(licenseBadge)
         return licenseBadge
     } else if (licenseType === 'The Unlicense') {
-        licenseBadge = `![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]`
+        licenseBadge = `![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)`
         // console.log(licenseBadge)
         return licenseBadge
     } else {
+        licenseExplained = 'There is no license chosen for this project.'
         return 'There is no license chosen for this project.'
     }
 }
