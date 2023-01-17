@@ -59,7 +59,8 @@ const questions = [
 
 const createReadme = (answers) => 
 `
-# ${answers['Project Name']}
+# ${answers['Project Name']} ${renderLicenseBadge(answers.License)}
+
     
 ## Table of Contents
 
@@ -73,8 +74,7 @@ const createReadme = (answers) =>
 
 
 ## <div id='ProjectDescription'></div> Project Description
-${answers['Project Description']} ${licenseBadge}
-
+${answers['Project Description']}
 
 ## <div id='InstallationInstructions'></div> Installation Instructions
 ${answers['Installation Instructions']}
@@ -106,7 +106,6 @@ My email address is: ${answers['Email Address']}
 `
 
 
-// depending on type of license chosen by user, that license badge image will render next to the project title
 
 
 function promptQuestions() {
@@ -115,8 +114,9 @@ function promptQuestions() {
         console.log(data)
         fs.writeFile('README.md', createReadme(data), () => {
             console.log('success')
-
-            iterateLicenseData(data)
+            
+            // depending on type of license chosen by user, that license badge image will render next to the project title
+            // iterateLicenseData(data)
 
 
         })
@@ -130,24 +130,30 @@ function promptQuestions() {
     })
 }
 
-promptQuestions()
-iterateLicenseData = (data) => {
-    licenseType = data.License
+// depending on type of license chosen by user, that license badge image will render next to the project title
+renderLicenseBadge = (data) => {
+    licenseType = data
     // console.log(licenseType)
 
     
-    if (licenseType === "None") {
-        licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-        console.log(licenseBadge)
+    if (licenseType === 'Mozilla Public License 2.0') {
+        licenseBadge = `![License: Mozilla Public License 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]`
+        // console.log(licenseBadge)
+        return licenseBadge
+    } else if (licenseType === 'MIT License') {
+        licenseBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+        // console.log(licenseBadge)
+        return licenseBadge
+    } else if (licenseType === 'The Unlicense') {
+        licenseBadge = `![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]`
+        // console.log(licenseBadge)
+        return licenseBadge
+    } else {
+        return 'There is no license chosen for this project.'
     }
-    // [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-    // [![License: Mozilla Public License 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-
-    // [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
-        
-
 
 }
+promptQuestions()
+
 
 
