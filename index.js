@@ -151,8 +151,8 @@ renderLicenseBadge = (data) => {
     } else {
         return 'There is no license chosen for this project.'
     }
-
 }
+
 promptQuestions()
 
 
