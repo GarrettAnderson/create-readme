@@ -65,40 +65,40 @@ ${renderLicenseBadge(answers.License)}
     
 ## Table of Contents
 
-* [Description](#ProjectDescription)
-* [Installation](#InstallationInstructions)
-* [Usage](#UsageInstructions)
-* [Contribution](#ContributionGuidelines)
-* [Test Instruction](#TestInstructions)
-* [License](#License)
-* [Questions](#Questions)
+* [Description](#project-description)
+* [Installation](#installation-instructions)
+* [Usage](#usage-instructions)
+* [Contribution](#contribution-guidelines)
+* [Test Instruction](#test-instructions)
+* [License](#license)
+* [Questions](#questions)
 
 
-## <div id='ProjectDescription'></div> Project Description
+## Project Description
 ${answers['Project Description']}
 
-## <div id='InstallationInstructions'></div> Installation Instructions
+## Installation Instructions
 ${answers['Installation Instructions']}
 
 
-## <div id='UsageInstructions'></div> Usage Instructions
+## Usage Instructions
 ${answers['Usage Instructions']}
 
 
-## <div id='ContributionGuidelines'></div> Contribution Guidelines
+## Contribution Guidelines
 ${answers['Contribution Guidelines']}
 
 
-## <div id='TestInstructions'></div> Test Instructions
+## Test Instructions
 ${answers['Test Instructions']}
 
 
-## <div id='License'></div> License
+## License
 ${answers.License}
 ${licenseExplained}
 
 
-## <div id='Questions'></div> Questions
+## Questions
 
 For questions you can find me on Github or via my email:
 
