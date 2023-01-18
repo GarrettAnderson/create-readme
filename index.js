@@ -69,7 +69,7 @@ ${renderLicenseBadge(answers.License)}
 * [Installation](#installation-instructions)
 * [Usage](#usage-instructions)
 * [Contribution](#contribution-guidelines)
-* [Test Instruction](#test-instructions)
+* [Test Instructions](#test-instructions)
 * [License](#license)
 * [Questions](#questions)
 
